@@ -15,6 +15,7 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230A0A0A'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23C9A44A'>K</text></svg>">
     <link rel="preload" href="/video/Steak.mp4" as="video" type="video/mp4">
     @vite(['resources/css/app.css'])
+    @livewireStyles
 </head>
 <body>
 
@@ -237,10 +238,7 @@
                     <p>(206) 555–0142</p>
                 </div>
                 <div class="mt-10 reveal reveal-d4">
-                    <a href="#" class="btn-primary">
-                        Make a Reservation
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </a>
+                    <livewire:reservation-form />
                 </div>
             </div>
             <div class="reveal reveal-d2">
@@ -349,5 +347,6 @@
 })();
 </script>
 
+@livewireScripts
 </body>
 </html>
